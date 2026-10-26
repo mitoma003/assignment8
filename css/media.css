@@ -1,0 +1,1156 @@
+```css
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+
+/* =========================================================
+   LARGE TABLET / SMALL LAPTOP
+   <= 1200px
+========================================================= */
+
+@media screen and (max-width: 1200px) {
+
+    .container {
+        width: 90%;
+        max-width: 1100px;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero-title {
+        font-size: 52px;
+        line-height: 1.15;
+    }
+
+    .hero-p {
+        width: 100%;
+        max-width: 650px;
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .hero-img-desgin {
+        width: 430px;
+        height: 430px;
+        flex-shrink: 0;
+    }
+
+    .back-layer {
+        width: 430px;
+        height: 430px;
+    }
+
+
+    /* =====================================================
+       SERVICES
+    ===================================================== */
+
+    .card {
+        width: calc((100% / 3) - 15px);
+    }
+
+    .card p {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       TECHNOLOGY
+    ===================================================== */
+
+    .techno-card {
+        width: calc((100% / 3) - 15px);
+    }
+
+    .techno-card p {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+
+    .contact-card {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+   <= 991px
+========================================================= */
+
+@media screen and (max-width: 991px) {
+
+    body {
+        padding-top: 70px;
+    }
+
+    html {
+        scroll-padding-top: 70px;
+    }
+
+
+    /* =====================================================
+       NAVBAR
+    ===================================================== */
+
+    #navId {
+        padding: 10px 0;
+    }
+
+    #navId .navbar-collapse {
+        background-color: white;
+        padding: 20px;
+        margin-top: 15px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    #navId .navbar-nav {
+        gap: 10px;
+    }
+
+    #navId .nav-link {
+        padding: 10px 5px;
+    }
+
+    #navId .nav-link::after {
+        bottom: 2px;
+    }
+
+    #navId .btn-main {
+        margin-top: 15px;
+        display: inline-block;
+    }
+
+    #navId .dropdown-menu {
+        width: 100% !important;
+        position: static !important;
+        transform: none !important;
+        margin-top: 10px !important;
+        box-shadow: none !important;
+        border: 1px solid #f3f4f6 !important;
+        border-radius: 15px;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .vh-90 {
+        height: auto;
+        min-height: auto;
+    }
+
+    .hero-color {
+        padding: 80px 0;
+        overflow: hidden;
+    }
+
+
+    /* Main Hero Row */
+
+    .hero-color .container > div:first-child {
+        width: 100%;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 60px;
+    }
+
+
+    /* Hero Text */
+
+    .hero-color .container > div:first-child > div:first-child {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        text-align: center;
+
+        margin-top: 0 !important;
+
+        order: 1;
+    }
+
+    .hero-span {
+        display: inline-block;
+    }
+
+    .hero-title {
+        font-size: 48px;
+        line-height: 1.15;
+        margin-top: 20px;
+    }
+
+    .hero-p {
+        width: 100%;
+        max-width: 700px;
+
+        margin: 20px auto;
+
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+
+    /* Hero Buttons */
+
+    .start-hero-btn,
+    .watch-hero-btn {
+        margin-top: 10px;
+    }
+
+
+    /* Hero Stats */
+
+    .hero-data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        gap: 35px;
+
+        margin-top: 30px;
+    }
+
+    .hero-data span {
+        font-size: 27px;
+    }
+
+    .hero-data p {
+        font-size: 13px;
+    }
+
+
+    /* Hero Image */
+
+    .hero-color .container > div:first-child > div:last-child {
+        width: 100% !important;
+
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+
+        order: 2;
+    }
+
+    .hero-img-desgin {
+        width: 430px;
+        height: 430px;
+
+        margin: 0 auto;
+
+        flex-shrink: 0;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+    }
+
+    .hero-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .back-layer {
+        width: 430px;
+        height: 430px;
+    }
+
+
+    /* Floating Icons */
+
+    .dev-logo {
+        top: -20px;
+        right: -20px;
+    }
+
+    .mobile-logo {
+        bottom: -20px;
+        left: -20px;
+    }
+
+
+    /* =====================================================
+       SECTION TITLES
+    ===================================================== */
+
+    .title {
+        padding: 50px 0;
+    }
+
+    .title h1 {
+        font-size: 42px;
+    }
+
+    .title p {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       SERVICES
+    ===================================================== */
+
+    .card {
+        width: calc(50% - 10px);
+        min-height: 430px;
+        padding: 30px;
+    }
+
+    .card p {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       TECHNOLOGY
+    ===================================================== */
+
+    .techno-card {
+        width: calc(50% - 10px);
+        padding: 30px;
+    }
+
+    .techno-card p {
+        width: 100%;
+    }
+
+    #pills-tab {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #pills-tab::before {
+        display: none;
+    }
+
+    #pills-tab .nav-link.active::after {
+        bottom: -3px;
+    }
+
+
+    /* =====================================================
+       TESTIMONIALS
+    ===================================================== */
+
+    #Testimonials {
+        margin-top: 60px;
+        padding-bottom: 70px;
+    }
+
+    .clients-say {
+        padding: 35px;
+    }
+
+
+    /* =====================================================
+       FAQ
+    ===================================================== */
+
+    #FAQ {
+        padding: 60px 0;
+    }
+
+    #accordionExample .accordion-item {
+        padding: 20px;
+    }
+
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+
+    #contact {
+        padding: 60px 0 70px;
+    }
+
+    #contact .title h1 {
+        font-size: 55px;
+        max-width: 100%;
+    }
+
+    #contact .title p {
+        font-size: 20px;
+    }
+
+    .contact-card {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .info-form {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .contact-info {
+        width: 100%;
+        padding: 40px;
+        border-radius: 0 0 25px 25px;
+    }
+
+    .contact-info p {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer {
+        padding: 50px 0 30px;
+        text-align: left;
+    }
+
+    .footer .container {
+        width: 90%;
+    }
+
+    .footer .container > div:first-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .footer .container > div:first-child p {
+        width: 100%;
+        max-width: 400px;
+        line-height: 1.7;
+    }
+
+    .footer-icon {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   <= 767px
+========================================================= */
+
+@media screen and (max-width: 767px) {
+
+    body {
+        padding-top: 65px;
+        overflow-x: hidden;
+    }
+
+    html {
+        scroll-padding-top: 65px;
+    }
+
+
+    /* =====================================================
+       NAVBAR
+    ===================================================== */
+
+    #navId {
+        padding: 8px 15px;
+    }
+
+    #navId .container {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #navId .navbar-brand h6 {
+        font-size: 21px;
+    }
+
+    #navId .main-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    #navId .navbar-collapse {
+        padding: 15px;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero-color {
+        padding: 55px 0 80px;
+        overflow: hidden;
+    }
+
+    .hero-color .container {
+        width: 90%;
+        padding: 0 !important;
+    }
+
+
+    /* Main Hero Row */
+
+    .hero-color .container > div:first-child {
+        gap: 55px;
+    }
+
+
+    /* Hero Text */
+
+    .hero-color .container > div:first-child > div:first-child {
+        width: 100% !important;
+
+        align-items: center !important;
+
+        text-align: center;
+
+        order: 1;
+    }
+
+    .hero-span {
+        font-size: 12px;
+        padding: 7px 12px;
+    }
+
+    .hero-title {
+        font-size: 38px;
+        line-height: 1.15;
+        margin: 18px 0;
+    }
+
+    .hero-p {
+        width: 100%;
+
+        font-size: 16px;
+        line-height: 1.7;
+
+        margin: 15px auto 25px;
+    }
+
+
+    /* Hero Buttons */
+
+    .start-hero-btn,
+    .watch-hero-btn {
+        width: 100%;
+        display: block;
+
+        padding: 14px 20px;
+
+        margin: 10px 0;
+
+        font-size: 16px;
+    }
+
+
+    /* Hero Stats */
+
+    .hero-data {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        flex-wrap: wrap;
+
+        gap: 20px;
+
+        margin-top: 30px;
+    }
+
+    .hero-data > div {
+        min-width: 75px;
+    }
+
+    .hero-data span {
+        font-size: 23px;
+    }
+
+    .hero-data p {
+        font-size: 11px;
+    }
+
+
+    /* Hero Image */
+
+    .hero-color .container > div:first-child > div:last-child {
+        width: 100% !important;
+
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+
+        order: 2;
+    }
+
+    .hero-img-desgin {
+        width: 310px;
+        height: 310px;
+
+        margin: 0 auto;
+
+        flex-shrink: 0;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: 100%;
+
+        padding: 13px;
+
+        border-radius: 20px;
+    }
+
+    .hero-img img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        border-radius: 13px;
+    }
+
+    .back-layer {
+        width: 310px;
+        height: 310px;
+        border-radius: 20px;
+    }
+
+
+    /* Floating Icons */
+
+    .dev-logo {
+        width: 60px;
+        height: 60px;
+
+        top: -18px;
+        right: -12px;
+
+        border-radius: 12px;
+    }
+
+    .mobile-logo {
+        width: 55px;
+        height: 55px;
+
+        bottom: -15px;
+        left: -12px;
+
+        border-radius: 10px;
+    }
+
+
+    /* =====================================================
+       SECTION TITLES
+    ===================================================== */
+
+    .Digital-Solutions {
+        margin: 20px 0 40px;
+    }
+
+    .title {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .title h1 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .title p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       SERVICES
+    ===================================================== */
+
+    .card {
+        width: 100%;
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .card p {
+        width: 100%;
+        line-height: 1.7;
+    }
+
+    .card ul {
+        padding-left: 0;
+    }
+
+
+    /* =====================================================
+       TECHNOLOGY
+    ===================================================== */
+
+    #pills-tab {
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 35px;
+    }
+
+    #pills-tab .nav-link {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 8px 10px;
+    }
+
+    #pills-tab .nav-link.active::after {
+        bottom: 0;
+    }
+
+    .techno-title {
+        text-align: center;
+    }
+
+    .techno-title h3 {
+        font-size: 21px;
+    }
+
+    .techno-title p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .techno-card {
+        width: 100%;
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .techno-card p {
+        width: 100%;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       TESTIMONIALS
+    ===================================================== */
+
+    #Testimonials {
+        margin-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .clients-say {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .clients-say q {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .client-info {
+        flex-wrap: wrap;
+    }
+
+    .client-info img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .client-info > div:first-child {
+        width: 75px;
+        height: 75px;
+    }
+
+    .client-info-spans :first-child {
+        font-size: 22px;
+    }
+
+
+    /* =====================================================
+       FAQ
+    ===================================================== */
+
+    #FAQ {
+        padding: 40px 0;
+    }
+
+    #accordionExample .accordion-item {
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+    }
+
+    #accordionExample .accordion-item h2.accordion-header button {
+        font-size: 15px;
+        line-height: 1.5;
+        padding: 10px;
+    }
+
+    #accordionExample .accordion-item p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+
+    #contact {
+        padding: 50px 0 60px;
+    }
+
+    #contact .title {
+        text-align: center;
+    }
+
+    #contact .title h1 {
+        font-size: 42px;
+        max-width: 100%;
+        line-height: 1.15;
+    }
+
+    #contact .title p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .contact-card {
+        width: 100%;
+        border-radius: 18px;
+    }
+
+    .info-form {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .info-form h3 {
+        font-size: 22px;
+    }
+
+    .info-form > p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .budget-options {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .budget-option label {
+        min-height: 70px;
+    }
+
+    .contact-info {
+        width: 100%;
+        padding: 30px 20px;
+        border-radius: 0 0 18px 18px;
+    }
+
+    .contact-info p {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer {
+        padding: 45px 0 25px;
+        text-align: left;
+    }
+
+    .footer .container {
+        width: 90%;
+    }
+
+    .footer .container > div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer .container > div:first-child p {
+        width: 100%;
+        max-width: 350px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .footer-icon {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-icon i {
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer .container > div:last-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        gap: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   <= 480px
+========================================================= */
+
+@media screen and (max-width: 480px) {
+
+    /* =====================================================
+       NAVBAR
+    ===================================================== */
+
+    #navId .navbar-brand h6 {
+        font-size: 19px;
+    }
+
+    #navId .main-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero-color {
+        padding: 45px 0 70px;
+    }
+
+    .hero-color .container {
+        width: 90%;
+    }
+
+    .hero-title {
+        font-size: 31px;
+        line-height: 1.2;
+    }
+
+    .hero-p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .hero-data {
+        gap: 15px;
+    }
+
+    .hero-data span {
+        font-size: 21px;
+    }
+
+    .hero-data p {
+        font-size: 10px;
+    }
+
+
+    /* Hero Image */
+
+    .hero-img-desgin {
+        width: 270px;
+        height: 270px;
+    }
+
+    .back-layer {
+        width: 270px;
+        height: 270px;
+    }
+
+    .hero-img {
+        padding: 11px;
+        border-radius: 18px;
+    }
+
+    .hero-img img {
+        border-radius: 11px;
+    }
+
+
+    /* Floating Icons */
+
+    .dev-logo {
+        width: 52px;
+        height: 52px;
+
+        top: -15px;
+        right: -5px;
+    }
+
+    .mobile-logo {
+        width: 48px;
+        height: 48px;
+
+        bottom: -12px;
+        left: -5px;
+    }
+
+
+    /* =====================================================
+       TITLES
+    ===================================================== */
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .title p {
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       TECHNOLOGY
+    ===================================================== */
+
+    #pills-tab {
+        gap: 0;
+    }
+
+    #pills-tab .nav-link {
+        font-size: 12px;
+        padding: 7px 8px;
+    }
+
+
+    /* =====================================================
+       TESTIMONIALS
+    ===================================================== */
+
+    .clients-say {
+        padding: 20px 15px;
+    }
+
+    .clients-say q {
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       FAQ
+    ===================================================== */
+
+    #accordionExample .accordion-item h2.accordion-header button {
+        font-size: 14px;
+    }
+
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+
+    #contact .title h1 {
+        font-size: 36px;
+    }
+
+    .info-form {
+        padding: 20px 15px;
+    }
+
+    .contact-info {
+        padding: 25px 15px;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer {
+        padding: 35px 0 20px;
+        text-align: left;
+    }
+
+    .footer .container {
+        width: 90%;
+    }
+
+    .footer .container > div:first-child {
+        gap: 25px;
+        padding-bottom: 25px;
+    }
+
+    .footer .container > div:first-child p {
+        max-width: 320px;
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .footer-icon {
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    .footer-icon i {
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
+    }
+
+    .footer .container > div:last-child {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+}
+```

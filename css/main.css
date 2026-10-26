@@ -1,0 +1,488 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../webfonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+:root {
+  --main-color: #ff6900;
+  --secondary-color: #F33F00;
+  --hero-color: #fff9eb;
+  --body-font: "Inter";
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--hero-color);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+.orange-color {
+  background: linear-gradient(
+    45deg,
+    var(--main-color),
+    var(--secondary-color),
+    var(--main-color)
+  );
+}
+/* start navbar section */
+.brand-icon {
+  width: 50px;
+  height: 50px;
+  color: white;
+  background: linear-gradient(
+    135deg,
+    var(--main-color),
+    var(--secondary-color),
+    var(--main-color)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.nav-img {
+  width: 40px;
+  border-radius: 50%;
+  border: #ffb86a 2px solid;
+}
+
+#navbarSupportedContent > div > i {
+  color: #4a5565;
+  transition: all 0.15s ease-in-out;
+}
+
+#navbarSupportedContent > div > i:hover {
+  color: var(--main-color);
+}
+/* end navbar section */
+
+
+
+/* start main section */
+
+.food-info {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  z-index: 1;
+  width: 85%;
+  transform: translateX(-50%);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.review-count {
+  color: #697282;
+  font-size: 14px;
+}
+
+.food-info > div span:nth-child(2) {
+  color: #697282;
+  font-size: 14px;
+}
+
+.food-info > div span:last-child {
+  color: #111827;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.food-info i {
+  font-size: 24px;
+}
+
+.food-span :first-child {
+  background-color: #dcfce6;
+  color: #008236;
+  border-radius: 25px;
+  padding: 5px 10px 5px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.food-span :last-child {
+  background-color: #dbeaff;
+  color: #1447e5;
+  border-radius: 25px;
+  padding: 5px 10px 5px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.user-option {
+  color: var(--main-color);
+}
+
+.user-option i {
+  width: 50px;
+  height: 50px;
+  background-color: #ffedd4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  transition: all 0.5s ease-in-out;
+}
+
+.user-option i:hover {
+  background-color: #ffd6a8;
+}
+
+#pills-tab {
+  position: relative;
+}
+
+#pills-tab::before {
+  content: "";
+  position: absolute;
+  top: 55px;
+  bottom: 0;
+  left: 50%;
+  width: 90%;
+  border-bottom: 1px solid #e5e7eb;
+  transform: translateX(-50%);
+}
+
+#pills-tab .nav-link {
+  position: relative;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+#pills-tab .nav-link.active {
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+#pills-tab .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--main-color);
+}
+
+#pills-tab .nav-item .nav-link {
+  color: #697282;
+  font-size: 16px;
+  font-weight: 600;
+}
+#pills-tab .nav-link.active {
+  color: var(--main-color);
+}
+
+.techno-title h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.techno-title p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.tab-content {
+  padding: 18px 48px 0;
+}
+
+#Ingredients {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  background-color: #fff9ec;
+  padding: 20px;
+  border-radius: 22px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#Ingredients .container {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+
+#Ingredients ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+#Ingredients li {
+  gap: 5px;
+  padding-bottom: 0;
+  font-size: 18px;
+  color: #334155;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#Ingredients .container ul li .orange-color {
+  background-color: var(--main-color);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.recipe-card {
+  min-height: 600px;
+}
+
+.image-wrapper {
+  height: 100%;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.recipe-footer {
+  margin: 64px 48px 32px;
+  padding-top: 36px;
+  border-top: 1px solid #e5e7eb;
+}
+
+#try-another-recipe {
+  background: linear-gradient(
+    135deg,
+    var(--main-color),
+    var(--secondary-color)
+  );
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 12px;
+  transition: 0.3s ease-in-out;
+}
+
+#try-another-recipe:hover {
+   background: linear-gradient(
+    135deg,
+    #F44700,
+    #E80006
+  );
+  transform: scale(1.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button-area {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 24px 48px;
+  background-color: white;
+  border-top: 1px solid #e5e7eb;
+}
+
+.recipe-card {
+  height: 760px;
+}
+
+.image-column,
+.image-wrapper {
+  height: 100%;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipe-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.recipe-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.recipe-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.recipe-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.recipe-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.recipe-scroll.is-scrolling::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background-color: #FF6900;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#Instructions {
+  height: 420px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 12px;
+}
+
+#Instructions::-webkit-scrollbar {
+  width: 7px;
+}
+
+#Instructions::-webkit-scrollbar-thumb {
+  background-color: #FFDCD2;
+  border-radius: 10px;
+}
+
+#Nutrition{
+  height: 380px;
+  padding-right: 12px;
+}
+
+.nutrition-info {
+  padding: 15px;
+  background-color: #F9FAFB;
+  border-radius: 12px;
+}
+
+.fire-icon {
+  width: 40px;
+  height: 40px;
+  color: #F54900;
+  background-color: #FFECD4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.dumbbell-icon {
+  width: 40px;
+  height: 40px;
+  color: #145DFB;
+  background-color: #DBEAFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.wheat-icon {
+  width: 40px;
+  height: 40px;
+  color: #F5A700;
+  background-color: #FFF4D6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.droplet-icon {
+  width: 40px;
+  height: 40px;
+  color: #E7000B;
+  background-color: #FFE2E1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.seedling-icon {
+  width: 40px;
+  height: 40px;
+  color: #00A600;
+  background-color: #E6FFE6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.cube-icon{
+  width: 40px;
+  height: 40px;
+  color: #E60076;
+  background-color: #FDE7F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.tip-info {
+  background-color: var(--hero-color);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #FFB900;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* end main section */
